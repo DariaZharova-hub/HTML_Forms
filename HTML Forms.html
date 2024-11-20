@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<body>
+
+<html>
+
+   <head>
+        <title>HTML Forms</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #f8f8f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  max-width: 320px;
+  padding: 15px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  
+  border: 1px solid #ccc;
+  
+  font-family: inherit;
+  font-size: 16px;
+}
+
+#name {
+  background-color:#B5F3FA;
+  color: black;
+  padding: 40px;
+  text-align: center;
+  text-align: center;
+  width:400px;
+  height:100px;
+  margin: auto;
+} 
+.description {
+  background-color: #D7F5FA;
+  color: black;
+  border: 10px inset #3282F6;
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
+  width:400px;
+  height:450px;
+  margin: auto;
+font-size: 20px;
+font-style: italic;
+}
+#button{
+background: #92B3FA; 
+width: 80px; 
+height: 40px; 
+border-radius: 5px; 
+box-shadow: 0px 1px 3px; 
+font-size: 15px
+}
+
+</style>
+
+
+   <body>
+<h1 id="name">Your registration:</h1>
+
+
+<form  class= "description" action="/action_page.php" method="get" target="_blank">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date" required><br><br>
+
+Select your gender:<br>
+
+  <input  type="radio" name="sex" value="man"
+                                  checked>man
+  <input  type="radio" name="sex" value="woman">
+                                          woman
+<input  type="radio" name="sex" value="others">
+                                          others <br><br>
+
+  Select your country:
+  <select name="language" size="1">
+  <option selected value="Latvia">Latvia
+  <option value="Finland">Finland
+  <option value="Poland">Poland
+ <option value="Spain">Spain
+ <option value="Germany">Germany
+  </select><br><br>
+
+  Select your city:
+  <select name="language" size="1">
+  <option selected value="Riga">Riga
+  <option value="Helsinki">Helsinki
+  <option value="Warsaw">Warsaw
+ <option value="Madrid">Madrid
+ <option value="Berlin">Berlin
+  </select><br><br>
+    <input id="button" type="submit" name="submit" value="Submit">
+    <input id="button"type="reset" name="reset" value="Reset">
+<input id="button" type="button" value="Cancel" onclick="history.back()"/>
+
+</form>
+
+</form>
+</body>
+</html>
